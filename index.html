@@ -13,7 +13,9 @@
 <meta property="og:url" content="https://gberry747-lab.github.io/daito-ryu-aikijujutsu-kodokai-hollywood/">
 <meta property="og:image" content="https://gberry747-lab.github.io/daito-ryu-aikijujutsu-kodokai-hollywood/assets/og-image.png">
 <meta name="theme-color" content="#151311">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23151311'/%3E%3Ccircle cx='50' cy='50' r='41' fill='none' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='53' text-anchor='middle' dominant-baseline='middle' font-family='Hiragino Mincho ProN,Yu Mincho,serif' font-size='46' fill='%23c9a961'%3E幸%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
@@ -135,7 +137,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 }
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:flex;align-items:center;gap:14px}
-.brand .mon{width:44px;height:44px;color:var(--gold-2);flex:none}
+.mon{display:inline-block;background:currentColor;-webkit-mask:url(assets/kodokai-crest-320.png) center/contain no-repeat;mask:url(assets/kodokai-crest-320.png) center/contain no-repeat}
+.brand .mon{width:46px;height:46px;color:var(--gold-2);flex:none}
 .brand .wordmark{line-height:1.05}
 .brand .wordmark b{display:block;font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase}
 .brand .wordmark span{display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-top:3px}
@@ -177,8 +180,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .hero::after{ /* faint horizon line */
   content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,97,.35),transparent);
 }
-.hero .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;grid-template-areas:"tate body crest" "facts facts facts";gap:0 clamp(20px,4vw,64px);align-items:center;width:100%}
-.tate{grid-area:tate}.hero-body{grid-area:body}.crest-wrap{grid-area:crest}.hero-facts{grid-area:facts}
+.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,64px);align-items:center;width:100%}
 .tate{ /* vertical kanji column */
   writing-mode:vertical-rl;text-orientation:upright;font-family:var(--jp);font-size:clamp(1.15rem,1.5vw,1.6rem);letter-spacing:.42em;
   color:var(--gold-2);opacity:.85;line-height:1;padding:8px 0;border-left:1px solid var(--line-dark);padding-left:18px;height:min(60vh,520px);
@@ -191,33 +193,24 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .hero-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
 .hero-actions .quiet{font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75;border-bottom:1px solid rgba(244,239,229,.35);padding:4px 0;transition:opacity .3s,border-color .3s}
 .hero-actions .quiet:hover{opacity:1;border-color:var(--gold-2)}
-.hero-facts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:0 40px;margin-top:56px;padding-top:26px;border-top:1px solid var(--line-dark);font-size:.86rem;letter-spacing:.06em;color:rgba(244,239,229,.7)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:0 40px;margin-top:64px;padding-top:26px;border-top:1px solid var(--line-dark);font-size:.86rem;letter-spacing:.06em;color:rgba(244,239,229,.7)}
 .hero-facts div{padding:6px 0}
 .hero-facts b{display:block;color:var(--gold-2);font-weight:500;font-family:var(--serif);font-size:1.15rem;letter-spacing:0}
-.crest-wrap{display:flex;justify-content:flex-end;align-items:center;position:relative;animation:crest-float 7s ease-in-out 2s infinite}
-.crest-wrap::before{
-  content:"";position:absolute;inset:-14%;border-radius:50%;pointer-events:none;
-  background:radial-gradient(circle,rgba(201,169,97,.30) 0%,rgba(201,169,97,.10) 38%,rgba(201,169,97,0) 64%);
-  animation:crest-glow 5.5s ease-in-out 2s infinite;
+.enso{
+  position:absolute;right:-8vw;top:50%;transform:translateY(-52%);width:min(72vh,720px);height:auto;z-index:1;opacity:.9;pointer-events:none;
 }
-.crest{
-  position:relative;width:clamp(240px,30vw,440px);height:auto;
-  filter:drop-shadow(0 2px 8px rgba(0,0,0,.45));
-  animation:crest-in 1.9s var(--ease) .25s both;
-}
-@keyframes crest-in{from{opacity:0;transform:scale(.82) rotate(-10deg)}60%{opacity:1}to{opacity:1;transform:none}}
-@keyframes crest-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-@keyframes crest-glow{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.06)}}
-@media (prefers-reduced-motion:reduce){.crest,.crest-wrap,.crest-wrap::before{animation:none}}
+.enso-stroke{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s cubic-bezier(.65,0,.35,1) .35s forwards}
+.enso-stroke.thin{animation-duration:2.9s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.enso-stroke{animation:none;stroke-dashoffset:0}}
 @media (max-width:1280px){
-  .crest{width:clamp(220px,26vw,360px)}
+  .enso{right:-22vw;opacity:.5}
 }
 @media (max-width:860px){
   .hero{padding:120px 0 70px}
-  .hero .wrap{grid-template-columns:1fr;grid-template-areas:"crest" "body" "facts"}
+  .hero .wrap{grid-template-columns:1fr}
   .tate{display:none}
-  .crest-wrap{justify-content:flex-start;margin-bottom:28px}
-  .crest{width:150px;filter:drop-shadow(0 0 28px rgba(201,169,97,.25))}
+  .enso{right:-30vw;top:38%;width:120vw;opacity:.35}
   .hero-facts{gap:0 26px;margin-top:44px}
 }
 
@@ -414,11 +407,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Kodokai Hollywood Branch, home">
-      <svg class="mon" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="46.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
-        <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width=".9" opacity=".8"/>
-        <text x="50" y="52" text-anchor="middle" dominant-baseline="middle" font-size="42" fill="currentColor" style="font-family:var(--jp)">幸</text>
-      </svg>
+      <span class="mon" aria-hidden="true"></span>
       <span class="wordmark"><b>Kodokai</b><span>Hollywood Branch</span></span>
     </a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
@@ -438,9 +427,23 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 <main id="main">
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
+  <svg class="enso" viewBox="0 0 600 600" aria-hidden="true">
+    <defs>
+      <filter id="brush" x="-15%" y="-15%" width="130%" height="130%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="t"/>
+        <feDisplacementMap in="SourceGraphic" in2="t" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#d7b862"/><stop offset="1" stop-color="#9a7a2f"/>
+      </linearGradient>
+    </defs>
+    <g filter="url(#brush)" fill="none" stroke-linecap="round">
+      <path class="enso-stroke" pathLength="1" d="M 322 74 A 232 232 0 1 0 478 132" stroke="url(#ink)" stroke-width="34" opacity=".85" stroke-dasharray=".94 1"/>
+      <path class="enso-stroke thin" pathLength="1" d="M 322 74 A 232 232 0 1 0 478 132" stroke="#f0dc9a" stroke-width="10" opacity=".45"/>
+    </g>
+  </svg>
   <div class="wrap">
     <div class="tate" aria-hidden="true">大東流合気柔術幸道会</div>
-    <div class="crest-wrap"><img class="crest" src="assets/kodokai-crest.png" width="1200" height="1200" alt="Crest of Daito-ryu Aikijujutsu Kodokai" fetchpriority="high"></div>
     <div class="hero-body">
       <p class="eyebrow">Hollywood Shibu Dojo <span class="jp">ハリウッド支部</span> · Los Angeles</p>
       <h1>Daito-ryu Aikijujutsu<br><em>Kodokai</em></h1>
@@ -449,12 +452,12 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
         <a class="btn btn-solid" href="mailto:kodoaiki@att.net?subject=Visiting%20the%20Hollywood%20Kodokai%20dojo&body=Hello%20Roy%20Sensei%2C%0A%0AI%20would%20like%20to%20arrange%20a%20time%20to%20observe%20a%20class.%0A%0AName%3A%0AAny%20prior%20training%3A%0A%0AThank%20you.">Arrange a visit</a>
         <a class="quiet" href="#art">About the art</a>
       </div>
-    </div>
-    <div class="hero-facts">
+      <div class="hero-facts">
         <div><b>1950</b>Kodokai founded, Yubetsu, Hokkaido</div>
         <div><b>2005</b>Training in Los Angeles since</div>
         <div><b>Hombu</b>Branch of the North American Hombu, San Luis Obispo</div>
       </div>
+    </div>
   </div>
 </section>
 
@@ -748,11 +751,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 <footer class="footer">
   <div class="wrap">
     <div class="top">
-      <svg class="mon" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="46.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
-        <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width=".9" opacity=".8"/>
-        <text x="50" y="52" text-anchor="middle" dominant-baseline="middle" font-size="42" fill="currentColor" style="font-family:var(--jp)">幸</text>
-      </svg>
+      <span class="mon" aria-hidden="true"></span>
       <div>
         <div class="name">Daito-ryu Aikijujutsu Kodokai · Hollywood Branch<span class="jp">大東流合気柔術幸道会 ハリウッド支部</span></div>
         <p class="lin">A branch dojo of the Daito-ryu Aikijujutsu Kodokai North American Hombu, San Luis Obispo, California, under Kiyama Hayawo Shihan, in the line of Horikawa Kodo and Takeda Sokaku. Instructor: Destrie Roy, Jun Dairi Kyoju, Yondan.</p>
