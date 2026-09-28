@@ -177,7 +177,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .hero::after{ /* faint horizon line */
   content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,97,.35),transparent);
 }
-.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,64px);align-items:center;width:100%}
+.hero .wrap{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(20px,4vw,64px);align-items:center;width:100%}
 .tate{ /* vertical kanji column */
   writing-mode:vertical-rl;text-orientation:upright;font-family:var(--jp);font-size:clamp(1.15rem,1.5vw,1.6rem);letter-spacing:.42em;
   color:var(--gold-2);opacity:.85;line-height:1;padding:8px 0;border-left:1px solid var(--line-dark);padding-left:18px;height:min(60vh,520px);
@@ -193,21 +193,23 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .hero-facts{display:flex;flex-wrap:wrap;gap:0 40px;margin-top:64px;padding-top:26px;border-top:1px solid var(--line-dark);font-size:.86rem;letter-spacing:.06em;color:rgba(244,239,229,.7)}
 .hero-facts div{padding:6px 0}
 .hero-facts b{display:block;color:var(--gold-2);font-weight:500;font-family:var(--serif);font-size:1.15rem;letter-spacing:0}
-.enso{
-  position:absolute;right:-8vw;top:50%;transform:translateY(-52%);width:min(72vh,720px);height:auto;z-index:1;opacity:.9;pointer-events:none;
+.crest-wrap{display:flex;justify-content:flex-end;align-items:center;order:3}
+.crest{
+  width:clamp(240px,30vw,440px);height:auto;
+  filter:drop-shadow(0 0 48px rgba(201,169,97,.22)) drop-shadow(0 2px 6px rgba(0,0,0,.4));
+  animation:crest-in 1.6s var(--ease) .2s both;
 }
-.enso-stroke{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s cubic-bezier(.65,0,.35,1) .35s forwards}
-.enso-stroke.thin{animation-duration:2.9s}
-@keyframes draw{to{stroke-dashoffset:0}}
-@media (prefers-reduced-motion:reduce){.enso-stroke{animation:none;stroke-dashoffset:0}}
+@keyframes crest-in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.crest{animation:none}}
 @media (max-width:1280px){
-  .enso{right:-22vw;opacity:.5}
+  .crest{width:clamp(220px,26vw,360px)}
 }
 @media (max-width:860px){
   .hero{padding:120px 0 70px}
   .hero .wrap{grid-template-columns:1fr}
   .tate{display:none}
-  .enso{right:-30vw;top:38%;width:120vw;opacity:.35}
+  .crest-wrap{order:-1;justify-content:flex-start;margin-bottom:6px}
+  .crest{width:150px;filter:drop-shadow(0 0 28px rgba(201,169,97,.25))}
   .hero-facts{gap:0 26px;margin-top:44px}
 }
 
@@ -428,23 +430,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 <main id="main">
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
-  <svg class="enso" viewBox="0 0 600 600" aria-hidden="true">
-    <defs>
-      <filter id="brush" x="-15%" y="-15%" width="130%" height="130%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="t"/>
-        <feDisplacementMap in="SourceGraphic" in2="t" scale="16" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-      <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#d7b862"/><stop offset="1" stop-color="#9a7a2f"/>
-      </linearGradient>
-    </defs>
-    <g filter="url(#brush)" fill="none" stroke-linecap="round">
-      <path class="enso-stroke" pathLength="1" d="M 322 74 A 232 232 0 1 0 478 132" stroke="url(#ink)" stroke-width="34" opacity=".85" stroke-dasharray=".94 1"/>
-      <path class="enso-stroke thin" pathLength="1" d="M 322 74 A 232 232 0 1 0 478 132" stroke="#f0dc9a" stroke-width="10" opacity=".45"/>
-    </g>
-  </svg>
   <div class="wrap">
     <div class="tate" aria-hidden="true">大東流合気柔術幸道会</div>
+    <div class="crest-wrap"><img class="crest" src="assets/kodokai-crest.png" width="1200" height="1200" alt="Crest of Daito-ryu Aikijujutsu Kodokai" fetchpriority="high"></div>
     <div class="hero-body">
       <p class="eyebrow">Hollywood Shibu Dojo <span class="jp">ハリウッド支部</span> · Los Angeles</p>
       <h1>Daito-ryu Aikijujutsu<br><em>Kodokai</em></h1>
