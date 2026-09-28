@@ -100,10 +100,10 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .wrap{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
 .eyebrow{
   font-family:var(--body);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-3);
-  display:flex;align-items:center;gap:14px;margin:0 0 20px;
+  display:block;position:relative;padding-left:48px;margin:0 0 20px;line-height:1.7;
 }
-.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
-.eyebrow .jp{letter-spacing:.3em;font-size:.92rem;color:var(--ink-4);text-transform:none}
+.eyebrow::before{content:"";position:absolute;left:0;top:.85em;width:34px;height:1px;background:var(--gold)}
+.eyebrow .jp{letter-spacing:.3em;font-size:.92rem;color:var(--ink-4);text-transform:none;margin:0 6px}
 .dark .eyebrow{color:var(--gold-2)}
 .dark .eyebrow .jp{color:rgba(244,239,229,.55)}
 .title{font-size:clamp(2rem,3.4vw + .6rem,3.4rem);max-width:19ch;margin-bottom:.5em}
@@ -139,8 +139,8 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .brand .wordmark{line-height:1.05}
 .brand .wordmark b{display:block;font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase}
 .brand .wordmark span{display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-top:3px}
-.nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
-.nav-links a{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;opacity:.85;transition:opacity .3s}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;opacity:.85;transition:opacity .3s;white-space:nowrap}
 .nav-links a:hover{opacity:1}
 .nav-links .cta{border:1px solid var(--gold-2);padding:10px 16px;border-radius:2px;color:var(--gold-2);opacity:1}
 .nav-links .cta:hover{background:var(--gold-2);color:var(--ink)}
@@ -153,7 +153,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
 .nav.open .burger span:nth-child(2){opacity:0}
 .nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-@media (max-width:860px){
+@media (max-width:1000px){
   .burger{display:block}
   .nav-links{
     position:fixed;inset:0;background:var(--ink);color:#f4efe5;flex-direction:column;justify-content:center;gap:28px;
@@ -183,7 +183,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
   color:var(--gold-2);opacity:.85;line-height:1;padding:8px 0;border-left:1px solid var(--line-dark);padding-left:18px;height:min(60vh,520px);
   display:flex;align-items:flex-start;
 }
-.hero-body{position:relative;z-index:2;max-width:760px}
+.hero-body{position:relative;z-index:2;max-width:700px}
 .hero h1{font-size:clamp(2.7rem,6.2vw,5.6rem);font-weight:500;line-height:1.02;color:#f4efe5;letter-spacing:-.005em}
 .hero h1 em{font-style:italic;font-weight:400;color:var(--gold-2)}
 .hero .lede{margin:28px 0 36px;max-width:52ch}
@@ -200,6 +200,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .enso-stroke.thin{animation-duration:2.9s}
 @keyframes draw{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){.enso-stroke{animation:none;stroke-dashoffset:0}}
+@media (max-width:1280px){
+  .enso{right:-22vw;opacity:.5}
+}
 @media (max-width:860px){
   .hero{padding:120px 0 70px}
   .hero .wrap{grid-template-columns:1fr}
@@ -344,11 +347,11 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
 .q{background:var(--paper);border:1px solid var(--line);padding:32px 30px;display:flex;flex-direction:column;gap:18px}
 .q .mark{font-family:var(--serif);font-size:3.2rem;line-height:.6;color:var(--gold);height:22px}
-.q p{font-family:var(--serif);font-size:1.18rem;line-height:1.45;color:var(--ink);margin:0;flex:1}
+.q p{font-family:var(--serif);font-size:1.16rem;line-height:1.45;color:var(--ink);margin:0;flex:1}
 .q cite{font-style:normal;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4)}
 .voices .more{margin-top:34px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:var(--ink-3);font-size:.95rem}
 .stars{color:var(--gold);letter-spacing:.12em}
-@media (max-width:960px){.quotes{grid-template-columns:1fr}}
+@media (max-width:1200px){.quotes{grid-template-columns:1fr;max-width:760px}}
 
 /* ---------- begin ---------- */
 .begin .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,90px);align-items:start}
@@ -542,9 +545,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;c
       <div class="node reveal">
         <div class="seal" aria-hidden="true">井</div>
         <div>
-          <div class="when">1932 – 2023 · d. 2023</div>
+          <div class="when">Hokkaido · after 1980</div>
           <h3>Inoue Yusuke <span class="jp">井上祐助</span> · Shimbo Tatsuo</h3>
-          <div class="role">Menkyo Kaiden Shihan</div>
+          <div class="role">Menkyo Kaiden Shihan · Inoue 1932 – 2023 · Shimbo d. 2023</div>
           <p>Horikawa's successors, who held the full transmission (menkyo kaiden) and led the Kodokai from Hokkaido after the founder's passing. The Kodokai's Japan Hombu is led today by Matsumoto Masakuni Shihan, Kai Cho, and Takahashi Toru Shihan, So Hombu Cho, from Sapporo.</p>
         </div>
       </div>
