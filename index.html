@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daito-ryu Aikijujutsu Kodokai · Hollywood Branch, Los Angeles</title>
+<meta name="description" content="The Hollywood branch of Daito-ryu Aikijujutsu Kodokai: a classical Japanese martial art (koryu) taught the traditional way in Los Angeles. Friday evenings in Hollywood, Saturday mornings in Culver City. Visits by appointment.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://gberry747-lab.github.io/daito-ryu-aikijujutsu-kodokai-hollywood/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daito-ryu Aikijujutsu Kodokai · Hollywood Branch">
+<meta property="og:description" content="A classical Japanese martial art, taught the classical way, in Los Angeles. Branch of the Kodokai North American Hombu.">
+<meta property="og:url" content="https://gberry747-lab.github.io/daito-ryu-aikijujutsu-kodokai-hollywood/">
+<meta property="og:image" content="https://gberry747-lab.github.io/daito-ryu-aikijujutsu-kodokai-hollywood/assets/og-image.png">
+<meta name="theme-color" content="#151311">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23151311'/%3E%3Ccircle cx='50' cy='50' r='41' fill='none' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='53' text-anchor='middle' dominant-baseline='middle' font-family='Hiragino Mincho ProN,Yu Mincho,serif' font-size='46' fill='%23c9a961'%3E幸%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["SportsActivityLocation", "LocalBusiness"],
+  "name": "Daito-ryu Aikijujutsu Kodokai - Hollywood Branch",
+  "alternateName": "大東流合気柔術幸道会 ハリウッド支部",
+  "description": "Hollywood branch dojo of Daito-ryu Aikijujutsu Kodokai, a classical Japanese martial art (koryu) taught in Los Angeles. Branch of the Kodokai North American Hombu, San Luis Obispo.",
+  "url": "https://gberry747-lab.github.io/daito-ryu-aikijujutsu-kodokai-hollywood/",
+  "email": "kodoaiki@att.net",
+  "priceRange": "$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3929 Middlebury St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90004",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:30", "closes": "20:30"}
+  ],
+  "sameAs": [
+    "https://www.facebook.com/desgroy/",
+    "https://www.yelp.com/biz/daito-ryu-aikijujutsu-kodokai-los-angeles",
+    "https://www.uskodokai.org/"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Daito-ryu Aikijujutsu Kodokai North American Hombu",
+    "url": "https://www.uskodokai.org/"
+  }
+}
+</script>
+<style>
+/* ------------------------------------------------------------------
+   Daito-ryu Aikijujutsu Kodokai · Hollywood Branch
+   Single-file site. No build step. Edit and push.
+   Palette: washi paper, sumi ink, aged gold, a touch of vermilion.
+------------------------------------------------------------------- */
+:root{
+  --paper:#f4efe5;
+  --paper-2:#ece5d6;
+  --paper-3:#e1d8c4;
+  --ink:#1b1917;
+  --ink-2:#2a2723;
+  --ink-3:#4a453e;
+  --ink-4:#756e63;
+  --gold:#b08c3c;
+  --gold-2:#c9a961;
+  --gold-3:#8b6d2a;
+  --shu:#a83a2c;
+  --line:rgba(27,25,23,.14);
+  --line-dark:rgba(201,169,97,.22);
+  --serif:"Cormorant Garamond","EB Garamond",Georgia,"Times New Roman",serif;
+  --body:"EB Garamond","Cormorant Garamond",Georgia,serif;
+  --jp:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho","Noto Serif JP","MS Mincho",serif;
+  --max:1180px;
+  --gutter:clamp(18px,4vw,48px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--paper);color:var(--ink-2);
+  font-family:var(--body);font-size:clamp(17px,1.05vw + 12px,19.5px);line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::before{ /* washi paper grain */
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.55;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.3 0 0 0 0 0.22 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+p{margin:0 0 1.1em}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;color:var(--ink);letter-spacing:.005em}
+.jp{font-family:var(--jp);font-weight:400}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold-2);color:var(--ink);padding:10px 14px;z-index:100;border-radius:4px}
+.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.eyebrow{
+  font-family:var(--body);font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-3);
+  display:flex;align-items:center;gap:14px;margin:0 0 20px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+.eyebrow .jp{letter-spacing:.3em;font-size:.92rem;color:var(--ink-4);text-transform:none}
+.dark .eyebrow{color:var(--gold-2)}
+.dark .eyebrow .jp{color:rgba(244,239,229,.55)}
+.title{font-size:clamp(2rem,3.4vw + .6rem,3.4rem);max-width:19ch;margin-bottom:.5em}
+.lede{font-family:var(--serif);font-size:clamp(1.25rem,1.1vw + .9rem,1.55rem);line-height:1.45;color:var(--ink-3);max-width:60ch}
+.dark .lede{color:rgba(244,239,229,.8)}
+.muted{color:var(--ink-4)}
+.section{padding:clamp(76px,9vw,132px) 0;position:relative}
+.dark{background:var(--ink);color:rgba(244,239,229,.86)}
+.dark h1,.dark h2,.dark h3,.dark h4{color:#f4efe5}
+.hr{height:1px;background:var(--line);border:0;margin:0}
+.btn{
+  display:inline-flex;align-items:center;gap:12px;font-family:var(--body);font-size:.86rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:15px 26px;border:1px solid var(--gold);color:var(--gold-3);border-radius:2px;transition:background .35s var(--ease),color .35s var(--ease),transform .35s var(--ease);
+}
+.btn:hover{background:var(--gold);color:#fff;transform:translateY(-1px)}
+.btn-solid{background:var(--gold-2);border-color:var(--gold-2);color:var(--ink)}
+.btn-solid:hover{background:#dcbf76;border-color:#dcbf76;color:var(--ink)}
+.dark .btn{color:var(--gold-2)}
+.dark .btn:hover{background:var(--gold-2);color:var(--ink)}
+.link{border-bottom:1px solid var(--gold);padding-bottom:1px;transition:color .3s;color:var(--ink)}
+.link:hover{color:var(--gold-3)}
+.dark .link{color:#f4efe5}
+.dark .link:hover{color:var(--gold-2)}
+
+/* ---------- nav ---------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;
+  transition:background .5s var(--ease),padding .5s var(--ease),box-shadow .5s var(--ease);color:#f4efe5;
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand .mon{width:44px;height:44px;color:var(--gold-2);flex:none}
+.brand .wordmark{line-height:1.05}
+.brand .wordmark b{display:block;font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase}
+.brand .wordmark span{display:block;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-top:3px}
+.nav-links{display:flex;align-items:center;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;opacity:.85;transition:opacity .3s}
+.nav-links a:hover{opacity:1}
+.nav-links .cta{border:1px solid var(--gold-2);padding:10px 16px;border-radius:2px;color:var(--gold-2);opacity:1}
+.nav-links .cta:hover{background:var(--gold-2);color:var(--ink)}
+.nav.scrolled{background:rgba(244,239,229,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:var(--ink);padding:12px 0;box-shadow:0 1px 0 var(--line)}
+.nav.scrolled .brand .mon{color:var(--gold-3)}
+.nav.scrolled .nav-links .cta{border-color:var(--gold-3);color:var(--gold-3)}
+.nav.scrolled .nav-links .cta:hover{background:var(--gold-3);color:#fff}
+.burger{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer;padding:0}
+.burger span{display:block;width:26px;height:1.5px;background:currentColor;margin:6px auto;transition:transform .35s var(--ease),opacity .3s}
+.nav.open .burger span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+@media (max-width:860px){
+  .burger{display:block}
+  .nav-links{
+    position:fixed;inset:0;background:var(--ink);color:#f4efe5;flex-direction:column;justify-content:center;gap:28px;
+    transform:translateY(-100%);opacity:0;transition:transform .5s var(--ease),opacity .4s;z-index:-1;
+  }
+  .nav.open .nav-links{transform:none;opacity:1}
+  .nav-links a{font-size:1.05rem;letter-spacing:.22em}
+  .nav.open{color:#f4efe5;background:transparent;box-shadow:none;backdrop-filter:none}
+  .nav.open .brand .mon{color:var(--gold-2)}
+}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;
+  background:
+    radial-gradient(1200px 700px at 88% 22%,rgba(201,169,97,.16),transparent 60%),
+    radial-gradient(900px 500px at 10% 90%,rgba(168,58,44,.08),transparent 60%),
+    #151311;
+  color:#f4efe5;padding:140px 0 90px;
+}
+.hero::after{ /* faint horizon line */
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(201,169,97,.35),transparent);
+}
+.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,64px);align-items:center;width:100%}
+.tate{ /* vertical kanji column */
+  writing-mode:vertical-rl;text-orientation:upright;font-family:var(--jp);font-size:clamp(1.15rem,1.5vw,1.6rem);letter-spacing:.42em;
+  color:var(--gold-2);opacity:.85;line-height:1;padding:8px 0;border-left:1px solid var(--line-dark);padding-left:18px;height:min(60vh,520px);
+  display:flex;align-items:flex-start;
+}
+.hero-body{position:relative;z-index:2;max-width:760px}
+.hero h1{font-size:clamp(2.7rem,6.2vw,5.6rem);font-weight:500;line-height:1.02;color:#f4efe5;letter-spacing:-.005em}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gold-2)}
+.hero .lede{margin:28px 0 36px;max-width:52ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.hero-actions .quiet{font-size:.86rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75;border-bottom:1px solid rgba(244,239,229,.35);padding:4px 0;transition:opacity .3s,border-color .3s}
+.hero-actions .quiet:hover{opacity:1;border-color:var(--gold-2)}
+.hero-facts{display:flex;flex-wrap:wrap;gap:0 40px;margin-top:64px;padding-top:26px;border-top:1px solid var(--line-dark);font-size:.86rem;letter-spacing:.06em;color:rgba(244,239,229,.7)}
+.hero-facts div{padding:6px 0}
+.hero-facts b{display:block;color:var(--gold-2);font-weight:500;font-family:var(--serif);font-size:1.15rem;letter-spacing:0}
+.enso{
+  position:absolute;right:-8vw;top:50%;transform:translateY(-52%);width:min(72vh,720px);height:auto;z-index:1;opacity:.9;pointer-events:none;
+}
+.enso-stroke{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s cubic-bezier(.65,0,.35,1) .35s forwards}
+.enso-stroke.thin{animation-duration:2.9s}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.enso-stroke{animation:none;stroke-dashoffset:0}}
+@media (max-width:860px){
+  .hero{padding:120px 0 70px}
+  .hero .wrap{grid-template-columns:1fr}
+  .tate{display:none}
+  .enso{right:-30vw;top:38%;width:120vw;opacity:.35}
+  .hero-facts{gap:0 26px;margin-top:44px}
+}
+
+/* ---------- statement ---------- */
+.statement{padding:clamp(80px,10vw,140px) 0 clamp(60px,7vw,100px)}
+.statement .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start}
+.statement h2{font-size:clamp(1.9rem,3vw + .4rem,3rem);max-width:22ch;font-weight:400}
+.statement h2 em{font-style:italic;color:var(--gold-3)}
+.statement .text{max-width:62ch;margin-top:26px}
+.hanko{
+  width:96px;height:96px;background:var(--shu);color:#f7efe2;border-radius:4px;display:grid;place-items:center;
+  font-family:var(--jp);font-size:2rem;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:.12em;line-height:1;
+  box-shadow:inset 0 0 0 3px var(--shu),inset 0 0 0 4px rgba(247,239,226,.75);transform:rotate(-3deg);opacity:.92;margin-top:12px;
+}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:64px;padding-top:44px;border-top:1px solid var(--line)}
+.pillar .k{font-family:var(--jp);font-size:2.6rem;color:var(--ink);line-height:1;margin-bottom:14px}
+.pillar h3{font-size:1.35rem;margin-bottom:8px}
+.pillar h3 span{font-family:var(--body);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-3);margin-left:10px;font-weight:400}
+.pillar p{color:var(--ink-3);font-size:.98rem;margin:0}
+@media (max-width:860px){
+  .statement .wrap{grid-template-columns:1fr}
+  .hanko{display:none}
+  .pillars{grid-template-columns:1fr;gap:34px}
+}
+
+/* ---------- the art ---------- */
+.art{background:var(--paper-2);overflow:hidden}
+.art .watermark{position:absolute;right:-2vw;top:8%;font-family:var(--jp);font-size:clamp(14rem,30vw,32rem);line-height:1;color:var(--ink);opacity:.035;pointer-events:none;user-select:none;writing-mode:vertical-rl}
+.art .grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.8fr);gap:clamp(36px,6vw,90px);align-items:start}
+.prose p{max-width:62ch}
+.prose p+p{margin-top:0}
+.pull{
+  border-left:2px solid var(--gold);padding:8px 0 8px 26px;margin:38px 0;font-family:var(--serif);font-size:clamp(1.35rem,1.4vw + .8rem,1.8rem);line-height:1.35;color:var(--ink);font-style:italic;max-width:32ch
+}
+.pull cite{display:block;font-style:normal;font-family:var(--body);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-3);margin-top:14px}
+.card{
+  background:var(--paper);border:1px solid var(--line);padding:34px 32px;position:relative;
+  box-shadow:0 30px 60px -40px rgba(27,25,23,.35);
+}
+.card::before{content:"";position:absolute;inset:8px;border:1px solid rgba(176,140,60,.35);pointer-events:none}
+.card h3{font-size:1.5rem;margin-bottom:6px}
+.card .sub{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-3);margin-bottom:22px}
+.scrolls{list-style:none;margin:0;padding:0}
+.scrolls li{display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px 0;border-top:1px solid var(--line);align-items:baseline}
+.scrolls li:last-child{border-bottom:1px solid var(--line)}
+.scrolls b{font-family:var(--serif);font-size:1.2rem;font-weight:500;color:var(--ink);display:block}
+.scrolls .jp{font-size:.9rem;color:var(--ink-4);display:block;margin-top:2px;letter-spacing:.08em}
+.scrolls .n{font-family:var(--serif);font-size:1.9rem;color:var(--gold-3);line-height:1}
+.scrolls .n small{font-family:var(--body);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4);display:block;text-align:right}
+.card .note{font-size:.9rem;color:var(--ink-4);margin:20px 0 0}
+@media (max-width:860px){.art .grid{grid-template-columns:1fr}}
+
+/* ---------- lineage ---------- */
+.lineage{background:
+  radial-gradient(900px 500px at 15% 10%,rgba(201,169,97,.1),transparent 60%),var(--ink)}
+.timeline{position:relative;margin-top:60px;padding-left:0}
+.timeline::before{content:"";position:absolute;left:34px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,var(--gold-2) 8%,var(--gold-2) 92%,transparent)}
+.node{position:relative;display:grid;grid-template-columns:70px 1fr;gap:26px;padding:26px 0 40px}
+.node .seal{
+  width:70px;height:70px;border-radius:50%;border:1px solid var(--gold-2);display:grid;place-items:center;background:var(--ink);
+  font-family:var(--jp);font-size:1.5rem;color:var(--gold-2);box-shadow:0 0 0 8px var(--ink);position:relative;z-index:1;
+}
+.node .seal.small{font-size:1rem;letter-spacing:.05em}
+.node .when{font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);margin-bottom:8px}
+.node h3{font-size:clamp(1.5rem,2vw,2rem);display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.node h3 .jp{font-size:1.1rem;color:rgba(244,239,229,.6);font-weight:400}
+.node .role{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--gold-2);margin:4px 0 12px}
+.node p{max-width:66ch;color:rgba(244,239,229,.8);margin:0}
+.node.here .seal{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2)}
+.node.here h3{color:#f4efe5}
+@media (max-width:640px){
+  .timeline::before{left:24px}
+  .node{grid-template-columns:50px 1fr;gap:18px}
+  .node .seal{width:50px;height:50px;font-size:1.2rem}
+  .node .seal.small{font-size:.8rem}
+}
+
+/* ---------- pattern band ---------- */
+.band{height:64px;background-color:var(--paper);position:relative;overflow:hidden}
+.band svg{position:absolute;inset:0;width:100%;height:100%;opacity:.16}
+
+/* ---------- dojo ---------- */
+.dojo .grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.85fr);gap:clamp(36px,6vw,90px);align-items:start}
+.years{display:flex;gap:34px;flex-wrap:wrap;margin:34px 0 0;padding:26px 0 0;border-top:1px solid var(--line)}
+.years div{min-width:120px}
+.years b{display:block;font-family:var(--serif);font-size:2rem;font-weight:500;color:var(--gold-3);line-height:1}
+.years span{font-size:.9rem;color:var(--ink-4)}
+.sensei .portrait{
+  width:100%;aspect-ratio:4/5;background:
+    radial-gradient(60% 50% at 50% 40%,rgba(201,169,97,.25),transparent 70%),linear-gradient(160deg,#2a2723,#151311);
+  display:grid;place-items:center;color:var(--gold-2);position:relative;margin-bottom:26px;border:1px solid var(--line-dark);
+}
+.sensei .portrait .k{font-family:var(--jp);font-size:5rem;line-height:1;opacity:.9}
+.sensei .portrait .cap{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(244,239,229,.55)}
+.sensei h3{font-size:1.8rem}
+.sensei .rank{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-3);margin:6px 0 18px}
+.sensei p{color:var(--ink-3);font-size:1rem}
+.affil{margin:26px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.affil li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;align-items:baseline;font-size:.96rem}
+.affil li span{color:var(--ink-4);font-size:.82rem;letter-spacing:.06em}
+@media (max-width:860px){.dojo .grid{grid-template-columns:1fr}}
+
+/* ---------- training ---------- */
+.training{background:var(--paper-2)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:50px}
+.tcard{background:var(--paper);border:1px solid var(--line);padding:32px 30px 30px;position:relative;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.tcard:hover{transform:translateY(-3px);box-shadow:0 30px 50px -36px rgba(27,25,23,.45)}
+.tcard .k{position:absolute;right:22px;top:16px;font-family:var(--jp);font-size:2.4rem;color:var(--gold);opacity:.55;line-height:1}
+.tcard h3{font-size:1.45rem;margin-bottom:10px;padding-right:50px}
+.tcard p{color:var(--ink-3);font-size:.98rem;margin:0}
+.visit-notes{margin-top:54px;padding:36px 34px;border:1px solid var(--line);background:var(--paper);display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:start}
+.visit-notes .k{font-family:var(--jp);font-size:3rem;color:var(--gold-3);line-height:1;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:.2em}
+.visit-notes h3{font-size:1.5rem;margin-bottom:12px}
+.visit-notes ol{margin:0;padding-left:1.2em;columns:2;column-gap:40px}
+.visit-notes li{break-inside:avoid;padding:6px 0;color:var(--ink-3);font-size:.98rem}
+@media (max-width:860px){.cards{grid-template-columns:1fr}.visit-notes{grid-template-columns:1fr}.visit-notes .k{writing-mode:horizontal-tb}.visit-notes ol{columns:1}}
+
+/* ---------- schedule / visit ---------- */
+.visit .grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(30px,5vw,70px);align-items:stretch}
+.sched{display:grid;gap:18px;margin-top:40px}
+.slot{border:1px solid var(--line-dark);padding:26px 26px 24px;background:rgba(244,239,229,.03);position:relative}
+.slot .day{font-size:.76rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-2);margin-bottom:8px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.slot h3{font-size:1.6rem;margin-bottom:6px}
+.slot .time{font-family:var(--serif);font-size:1.35rem;color:#f4efe5;margin-bottom:10px}
+.slot p{margin:0;color:rgba(244,239,229,.75);font-size:.96rem}
+.slot .addr{display:block;margin-top:10px;font-size:.95rem;color:rgba(244,239,229,.9)}
+.slot .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.slot .tags span{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--line-dark);padding:5px 10px;color:rgba(244,239,229,.7);border-radius:2px}
+.appt{margin-top:22px;padding:22px 26px;border-left:2px solid var(--gold-2);background:rgba(201,169,97,.06);font-size:.98rem}
+.appt b{color:var(--gold-2);font-weight:500}
+.map{border:1px solid var(--line-dark);min-height:420px;height:100%;position:relative;filter:grayscale(.85) sepia(.25) contrast(.95) brightness(.85)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (max-width:860px){.visit .grid{grid-template-columns:1fr}.map{min-height:340px}}
+
+/* ---------- voices ---------- */
+.voices{background:var(--paper-2)}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:50px}
+.q{background:var(--paper);border:1px solid var(--line);padding:32px 30px;display:flex;flex-direction:column;gap:18px}
+.q .mark{font-family:var(--serif);font-size:3.2rem;line-height:.6;color:var(--gold);height:22px}
+.q p{font-family:var(--serif);font-size:1.18rem;line-height:1.45;color:var(--ink);margin:0;flex:1}
+.q cite{font-style:normal;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-4)}
+.voices .more{margin-top:34px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:var(--ink-3);font-size:.95rem}
+.stars{color:var(--gold);letter-spacing:.12em}
+@media (max-width:960px){.quotes{grid-template-columns:1fr}}
+
+/* ---------- begin ---------- */
+.begin .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,6vw,90px);align-items:start}
+.steps{list-style:none;margin:40px 0 0;padding:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:54px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line);counter-increment:s}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:1.8rem;color:var(--gold-3);line-height:1}
+.steps h3{font-size:1.35rem;margin-bottom:6px}
+.steps p{margin:0;color:var(--ink-3);font-size:.98rem}
+.contact{background:var(--ink);color:rgba(244,239,229,.85);padding:40px 38px;position:relative;margin-top:40px}
+.contact::before{content:"";position:absolute;inset:10px;border:1px solid var(--line-dark);pointer-events:none}
+.contact h3{color:#f4efe5;font-size:1.9rem;margin-bottom:10px}
+.contact .email{font-family:var(--serif);font-size:clamp(1.3rem,2vw,1.7rem);color:var(--gold-2);display:inline-block;margin:10px 0 22px;border-bottom:1px solid var(--line-dark);padding-bottom:4px;word-break:break-all}
+.contact p{font-size:.96rem}
+.contact .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+.contact .social{display:flex;gap:22px;margin-top:26px;padding-top:20px;border-top:1px solid var(--line-dark);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+.contact .social a{opacity:.8}.contact .social a:hover{opacity:1;color:var(--gold-2)}
+.faq{margin-top:56px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-family:var(--serif);font-size:1.3rem;color:var(--ink);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--serif);font-size:1.6rem;color:var(--gold-3);transition:transform .35s var(--ease);flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 0 22px;color:var(--ink-3);font-size:.98rem;max-width:64ch}
+@media (max-width:860px){.begin .grid{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+.footer{background:#100e0c;color:rgba(244,239,229,.6);padding:64px 0 34px;font-size:.9rem}
+.footer .top{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:start;padding-bottom:40px;border-bottom:1px solid var(--line-dark)}
+.footer .mon{width:64px;height:64px;color:var(--gold-2)}
+.footer .name{font-family:var(--serif);font-size:1.3rem;color:#f4efe5;font-weight:500;line-height:1.2}
+.footer .name .jp{display:block;font-size:.95rem;color:var(--gold-2);margin-top:6px;letter-spacing:.14em;font-weight:400}
+.footer .lin{margin-top:16px;max-width:60ch;line-height:1.6}
+.footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase}
+.footer ul a{opacity:.8}.footer ul a:hover{opacity:1;color:var(--gold-2)}
+.footer .bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:.8rem;letter-spacing:.06em}
+@media (max-width:860px){.footer .top{grid-template-columns:1fr}}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.12s}.reveal.d2{transition-delay:.24s}.reveal.d3{transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Kodokai Hollywood Branch, home">
+      <svg class="mon" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width=".9" opacity=".8"/>
+        <text x="50" y="52" text-anchor="middle" dominant-baseline="middle" font-size="42" fill="currentColor" style="font-family:var(--jp)">幸</text>
+      </svg>
+      <span class="wordmark"><b>Kodokai</b><span>Hollywood Branch</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="menu">
+        <li><a href="#art">The Art</a></li>
+        <li><a href="#lineage">Lineage</a></li>
+        <li><a href="#dojo">The Dojo</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#visit">Schedule</a></li>
+        <li><a class="cta" href="mailto:kodoaiki@att.net?subject=Visiting%20the%20Hollywood%20Kodokai%20dojo">Arrange a visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <svg class="enso" viewBox="0 0 600 600" aria-hidden="true">
+    <defs>
+      <filter id="brush" x="-15%" y="-15%" width="130%" height="130%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="3" seed="11" result="t"/>
+        <feDisplacementMap in="SourceGraphic" in2="t" scale="16" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#d7b862"/><stop offset="1" stop-color="#9a7a2f"/>
+      </linearGradient>
+    </defs>
+    <g filter="url(#brush)" fill="none" stroke-linecap="round">
+      <path class="enso-stroke" pathLength="1" d="M 322 74 A 232 232 0 1 0 478 132" stroke="url(#ink)" stroke-width="34" opacity=".85" stroke-dasharray=".94 1"/>
+      <path class="enso-stroke thin" pathLength="1" d="M 322 74 A 232 232 0 1 0 478 132" stroke="#f0dc9a" stroke-width="10" opacity=".45"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="tate" aria-hidden="true">大東流合気柔術幸道会</div>
+    <div class="hero-body">
+      <p class="eyebrow">Hollywood Shibu Dojo <span class="jp">ハリウッド支部</span> · Los Angeles</p>
+      <h1>Daito-ryu Aikijujutsu<br><em>Kodokai</em></h1>
+      <p class="lede">A classical Japanese martial art, taught the classical way. The Hollywood branch of the Kodokai trains on Friday evenings in East Hollywood and Saturday mornings in Culver City.</p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="mailto:kodoaiki@att.net?subject=Visiting%20the%20Hollywood%20Kodokai%20dojo&body=Hello%20Roy%20Sensei%2C%0A%0AI%20would%20like%20to%20arrange%20a%20time%20to%20observe%20a%20class.%0A%0AName%3A%0AAny%20prior%20training%3A%0A%0AThank%20you.">Arrange a visit</a>
+        <a class="quiet" href="#art">About the art</a>
+      </div>
+      <div class="hero-facts">
+        <div><b>1950</b>Kodokai founded, Yubetsu, Hokkaido</div>
+        <div><b>2005</b>Training in Los Angeles since</div>
+        <div><b>Hombu</b>Branch of the North American Hombu, San Luis Obispo</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATEMENT ================= -->
+<section class="statement">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">A dojo, in the old sense <span class="jp">道場</span></p>
+      <h2>There are no shortcuts in Daito-ryu, <em>and none are offered here.</em></h2>
+      <div class="text">
+        <p>Training is by kata, in pairs, under a teacher who learned the same way from his teachers, who learned it from theirs. Progress is measured in understanding rather than in months, and rank is earned within the Kodokai's traditional system, not sold. What is offered is a mat, a teacher, and an art that has been handed down person to person since the Takeda family kept it for themselves.</p>
+      </div>
+    </div>
+    <div class="hanko reveal d1" aria-hidden="true">幸道会</div>
+  </div>
+  <div class="wrap">
+    <div class="pillars">
+      <div class="pillar reveal"><div class="k" aria-hidden="true">古流</div><h3>Koryu <span>the old school</span></h3><p>Daito-ryu is a koryu, a classical tradition that predates the modern budo. It is practiced for its own sake, without tournaments, and preserved by transmission from teacher to student.</p></div>
+      <div class="pillar reveal d1"><div class="k" aria-hidden="true">合気</div><h3>Aiki <span>the principle</span></h3><p>The heart of the art: meeting an attack in a way that takes the attacker's balance and strength at the moment of contact, so that technique needs little force to complete.</p></div>
+      <div class="pillar reveal d2"><div class="k" aria-hidden="true">礼</div><h3>Rei <span>etiquette</span></h3><p>Bowing, care of the dojo, and respect for one's seniors and partners are not decoration. They are the form in which the art is carried and the reason a small dojo can train hard and safely.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE ART ================= -->
+<section class="section art" id="art">
+  <div class="watermark" aria-hidden="true">合気</div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="prose">
+        <div class="reveal">
+          <p class="eyebrow">The art <span class="jp">大東流合気柔術</span></p>
+          <h2 class="title">An art of the Takeda family, carried into the modern world</h2>
+          <p class="lede">Daito-ryu Aikijujutsu is a Japanese martial art of joint locks, throws, pins and the subtle balance-breaking known as aiki. By its own tradition it descends from the Minamoto and Takeda clans and from the Aizu domain, where it was kept as a private art of the samurai class.</p>
+        </div>
+        <div class="reveal">
+          <p>It became known to the world through Takeda Sokaku, who began teaching outside the family in the late nineteenth century and enrolled some thirty thousand students in his lifetime: police, military officers, and a generation of martial artists. Among them was Morihei Ueshiba, whose aikido grew from what he learned from Takeda. That is why Daito-ryu is often called the parent art of aikido, and why its influence runs through much of modern Japanese budo.</p>
+          <p>The curriculum moves from jujutsu, the physical techniques of control, toward aiki no jutsu, in which the same techniques are done with timing, connection and posture rather than muscle. Together they form aikijujutsu. The Kodokai, the branch founded by Horikawa Kodo, is known above all for the refinement of its aiki: technique that is small, quiet, and difficult to see.</p>
+          <blockquote class="pull">The secret of aiki is to overpower the opponent mentally at a glance and to win without fighting.<cite>Takeda Sokaku</cite></blockquote>
+          <p>Kodokai teaching rests on the principle of softness, ju: yield to force and redirect it rather than oppose it. It is why the art can be studied seriously for a lifetime, and why a small person can control a large one.</p>
+        </div>
+      </div>
+      <aside class="card reveal d1">
+        <h3>What is studied</h3>
+        <p class="sub">The transmission scrolls of the Kodokai</p>
+        <ul class="scrolls">
+          <li><div><b>Hiden Mokuroku</b><span class="jp">秘伝目録 · the foundation</span></div><div class="n">118<small>techniques</small></div></li>
+          <li><div><b>Hiden Okugi Mokuroku</b><span class="jp">秘伝奥義目録 · the inner teachings</span></div><div class="n">30<small>techniques</small></div></li>
+          <li><div><b>Aikijujutsu Okugi Mokuroku</b><span class="jp">合気柔術奥義目録 · the aiki teachings</span></div><div class="n">36<small>articles</small></div></li>
+        </ul>
+        <p class="note">Beyond the scrolls, the wider Daito-ryu system is said to hold more than 2,800 techniques. Students begin with the first catalogue and stay with it for years.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINEAGE ================= -->
+<section class="section dark lineage" id="lineage">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Lineage <span class="jp">系譜</span></p>
+      <h2 class="title">Person to person, for more than a century</h2>
+      <p class="lede">A koryu is only as real as its line of transmission. The Hollywood dojo's line runs from Takeda Sokaku through Horikawa Kodo and the Kodokai in Hokkaido to the North American Hombu in California.</p>
+    </div>
+    <div class="timeline">
+      <div class="node reveal">
+        <div class="seal" aria-hidden="true">武</div>
+        <div>
+          <div class="when">1860 – 1943</div>
+          <h3>Takeda Sokaku <span class="jp">武田惣角</span></h3>
+          <div class="role">Reviver and disseminator of Daito-ryu</div>
+          <p>Born in Aizu, a small man of legendary skill known as the "Little Tengu of Aizu". After the Meiji Restoration he carried the Takeda family art across Japan, teaching police, officers and some thirty thousand students in all, and issuing the first teaching licences (kyoju dairi) of the modern era.</p>
+        </div>
+      </div>
+      <div class="node reveal">
+        <div class="seal" aria-hidden="true">幸</div>
+        <div>
+          <div class="when">1894 – 1980</div>
+          <h3>Horikawa Kodo <span class="jp">堀川幸道</span></h3>
+          <div class="role">Menkyo Kaiden · Founder of the Kodokai · Eisei Meijin</div>
+          <p>Born in Kitami, Hokkaido, and a direct student of Takeda from 1914, Horikawa received the art's inner transmissions and became known for an aiki of extraordinary subtlety, expressed through minimal, efficient movement. In September 1950 he founded the Daito-ryu Aikijujutsu Kodokai in Yubetsu, on Hokkaido's Okhotsk coast. Japan honored him with the Order of the Sacred Treasure and, in 1974, the title Eisei Meijin, "eternal master".</p>
+        </div>
+      </div>
+      <div class="node reveal">
+        <div class="seal" aria-hidden="true">井</div>
+        <div>
+          <div class="when">1932 – 2023 · d. 2023</div>
+          <h3>Inoue Yusuke <span class="jp">井上祐助</span> · Shimbo Tatsuo</h3>
+          <div class="role">Menkyo Kaiden Shihan</div>
+          <p>Horikawa's successors, who held the full transmission (menkyo kaiden) and led the Kodokai from Hokkaido after the founder's passing. The Kodokai's Japan Hombu is led today by Matsumoto Masakuni Shihan, Kai Cho, and Takahashi Toru Shihan, So Hombu Cho, from Sapporo.</p>
+        </div>
+      </div>
+      <div class="node reveal">
+        <div class="seal" aria-hidden="true">師</div>
+        <div>
+          <div class="when">San Luis Obispo · since the early 1970s</div>
+          <h3>Kiyama Hayawo Shihan</h3>
+          <div class="role">North American Hombu · Senior Advisor</div>
+          <p>Born in Kumamoto, Kyushu, Kiyama Shihan has taught quietly in San Luis Obispo for more than fifty years and is recognized internationally as one of the most gifted exponents of aiki. The Hombu he built is the oldest Daito-ryu organization in the United States. Its Chief Instructor today is Daniel Kiyama Sensei, 7th dan, Dairi Kyoju.</p>
+        </div>
+      </div>
+      <div class="node here reveal">
+        <div class="seal small" aria-hidden="true">支部</div>
+        <div>
+          <div class="when">Los Angeles · since 2005</div>
+          <h3>Hollywood Branch <span class="jp">ハリウッド支部</span></h3>
+          <div class="role">Destrie Roy Sensei · Jun Dairi Kyoju · Yondan</div>
+          <p>The Los Angeles branch of the Kodokai, training under the guidance of the North American Hombu. Members train with the Hombu instructors at seminars through the year, and the branch hosts the Los Angeles Summer Kenshukai each September.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true">
+  <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
+    <defs><pattern id="seigaiha" width="80" height="40" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#1b1917" stroke-width="1">
+        <circle cx="40" cy="40" r="38"/><circle cx="40" cy="40" r="28"/><circle cx="40" cy="40" r="18"/><circle cx="40" cy="40" r="8"/>
+        <circle cx="0" cy="20" r="38"/><circle cx="0" cy="20" r="28"/><circle cx="0" cy="20" r="18"/><circle cx="0" cy="20" r="8"/>
+        <circle cx="80" cy="20" r="38"/><circle cx="80" cy="20" r="28"/><circle cx="80" cy="20" r="18"/><circle cx="80" cy="20" r="8"/>
+        <circle cx="40" cy="0" r="38"/><circle cx="40" cy="0" r="28"/><circle cx="40" cy="0" r="18"/><circle cx="40" cy="0" r="8"/>
+      </g></pattern></defs>
+    <rect width="1200" height="64" fill="url(#seigaiha)"/>
+  </svg>
+</div>
+
+<!-- ================= THE DOJO ================= -->
+<section class="section dojo" id="dojo">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="reveal">
+          <p class="eyebrow">The dojo <span class="jp">ハリウッド道場</span></p>
+          <h2 class="title">A small dojo inside a Japanese community institute</h2>
+          <p class="lede">The Kodokai has trained in Los Angeles since 2005, first in Temple City. In 2018 the dojo moved to the Hollywood Japanese Cultural Institute in East Hollywood and opened a Saturday study group in Culver City.</p>
+        </div>
+        <div class="prose reveal">
+          <p>The Institute is a neighborhood home for Japanese and Japanese American culture that has stood since 1947 and has housed a judo dojo since 1951. The Hollywood branch was welcomed into being with an opening training session attended by Kiyama Shihan and senior teachers from the Hombu, and it has kept the same quiet rhythm since: Friday evenings on the mat in Hollywood, Saturday mornings on the west side.</p>
+          <p>The branch is not a business with a sales counter. It is a group of students who train together under Destrie Roy Sensei, and who train with Daniel Kiyama Sensei and the Hombu instructors at seminars, called kenshukai, through the year. Each September the branch hosts the Los Angeles Summer Kenshukai, which gathers members of the North American Kodokai for a weekend of training.</p>
+        </div>
+        <div class="years reveal">
+          <div><b>2005</b><span>Kodokai in Los Angeles</span></div>
+          <div><b>2018</b><span>Hollywood dojo opens</span></div>
+          <div><b>5.0</b><span>Yelp rating, every review five stars</span></div>
+        </div>
+      </div>
+      <aside class="sensei reveal d1">
+        <div class="portrait" aria-hidden="true"><div class="k">師</div><div class="cap">Branch Director</div></div>
+        <h3>Destrie Roy Sensei</h3>
+        <div class="rank">Jun Dairi Kyoju · Yondan (4th dan)</div>
+        <p>Roy Sensei has trained in the martial arts for more than fifty years and in Daito-ryu for more than thirty, in Japan as well as the United States. He holds the rank of yondan and the Jun Dairi Kyoju teaching licence within the Kodokai, and directs the Hollywood branch under the guidance of the North American Hombu.</p>
+        <p>His stated wish is a simple one: to help others develop self-discipline, character and a healthy life by training in the art handed down from the Takeda family. Students describe a patient, exacting teacher whose first concerns are etiquette, discipline and correct technique.</p>
+        <ul class="affil">
+          <li><a class="link" href="https://www.uskodokai.org/" target="_blank" rel="noopener">North American Hombu</a><span>San Luis Obispo, CA</span></li>
+          <li><a class="link" href="https://daito-ryu-kodokai.com/" target="_blank" rel="noopener">Kodokai Japan Hombu</a><span>Hokkaido, Japan</span></li>
+          <li><a class="link" href="https://hollywoodjci.org/" target="_blank" rel="noopener">Hollywood Japanese Cultural Institute</a><span>Our home since 2018</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAINING ================= -->
+<section class="section training" id="training">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Training <span class="jp">稽古</span></p>
+      <h2 class="title">What a class is like</h2>
+      <p class="lede">Classes run much as they do in Japan. Students bow in, warm up, and work through techniques in pairs under the teacher's eye. The pace is deliberate. The detail is everything.</p>
+    </div>
+    <div class="cards">
+      <div class="tcard reveal"><div class="k" aria-hidden="true">型</div><h3>Kata, in pairs</h3><p>Techniques are studied as set forms with a partner: one attacks, one receives and controls, and the roles alternate. There is no sparring for points and no competition. Your partner is a teacher, not an opponent, and the trust between the two is what makes serious training possible.</p></div>
+      <div class="tcard reveal d1"><div class="k" aria-hidden="true">柔</div><h3>Aiki before strength</h3><p>The first lesson is to stop pushing. Timing, connection and the taking of balance do the work that muscle cannot. Because of this the art does not depend on size, youth or athleticism, and it can be practiced, and improved upon, for a lifetime.</p></div>
+      <div class="tcard reveal d2"><div class="k" aria-hidden="true">礼</div><h3>Etiquette</h3><p>Bowing in and out, keeping the dojo clean, arriving on time and showing regard for one's seniors are not formalities added to the art. They are how the art has been transmitted for generations, and they are expected of everyone on the mat.</p></div>
+      <div class="tcard reveal d3"><div class="k" aria-hidden="true">段</div><h3>Rank and licence</h3><p>Students progress through kyu and dan grades awarded within the Kodokai. The authority to teach is a separate, traditional licence, dairi kyoju, granted by the Hombu. No timeline is promised, because in a classical art none can honestly be.</p></div>
+    </div>
+    <div class="visit-notes reveal">
+      <div class="k" aria-hidden="true">見学</div>
+      <div>
+        <h3>Your first visit</h3>
+        <ol>
+          <li>Email first. The dojo shares its mat with a community institute, and visits are arranged by appointment.</li>
+          <li>Come and watch a full class before you decide anything. Sit where you are shown, and ask your questions afterward.</li>
+          <li>Wear ordinary, modest clothing to observe. If you are invited to train, a plain white keikogi is the dojo uniform; the teacher will tell you what to bring.</li>
+          <li>Prior experience in another art is welcome but not required. Sincerity and consistency matter more.</li>
+          <li>Dues and other practical matters are discussed in person with the teacher.</li>
+          <li>Leave the phone in your bag. Two hours of attention is the first technique.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SCHEDULE / LOCATION ================= -->
+<section class="section dark visit" id="visit">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="reveal">
+          <p class="eyebrow">Schedule and location <span class="jp">稽古日</span></p>
+          <h2 class="title">Friday evenings in Hollywood, Saturday mornings in Culver City</h2>
+        </div>
+        <div class="sched">
+          <div class="slot reveal">
+            <div class="day"><span>Hollywood dojo · Shibu</span><span>Every week</span></div>
+            <h3>Friday</h3>
+            <div class="time">6:30 – 8:30 PM</div>
+            <p>Hollywood Japanese Cultural Institute, East Hollywood.</p>
+            <a class="addr link" href="https://www.google.com/maps/search/?api=1&query=3929+Middlebury+St,+Los+Angeles,+CA+90004" target="_blank" rel="noopener">3929 Middlebury Street, Los Angeles, CA 90004</a>
+            <div class="tags"><span>Private lot parking</span><span>Wheelchair accessible</span></div>
+          </div>
+          <div class="slot reveal d1">
+            <div class="day"><span>Culver City · Study group</span><span>Every week</span></div>
+            <h3>Saturday</h3>
+            <div class="time">11:30 AM – 1:30 PM</div>
+            <p>West Los Angeles. The address is shared when you arrange your visit.</p>
+          </div>
+        </div>
+        <div class="appt reveal d2"><b>Visits are by appointment.</b> Please email <a class="link" href="mailto:kodoaiki@att.net?subject=Visiting%20the%20Hollywood%20Kodokai%20dojo">kodoaiki@att.net</a> before your first visit so the teacher can expect you.</div>
+      </div>
+      <div class="map reveal d1">
+        <iframe title="Map: Hollywood Japanese Cultural Institute, 3929 Middlebury St, Los Angeles" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=3929%20Middlebury%20St%2C%20Los%20Angeles%2C%20CA%2090004&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VOICES ================= -->
+<section class="section voices" id="voices">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">In their words <span class="jp">声</span></p>
+      <h2 class="title">What students say</h2>
+    </div>
+    <div class="quotes">
+      <blockquote class="q reveal"><div class="mark" aria-hidden="true">“</div><p>It is not a business concerned with churning out as many black belts as possible. The instructor has trained for many years, both here and in Asia, and teaches in a very traditional manner. Proper etiquette, discipline, and execution of technique are his foremost concern.</p><cite>Tom B. · Yelp</cite></blockquote>
+      <blockquote class="q reveal d1"><div class="mark" aria-hidden="true">“</div><p>Traditional Japanese martial arts taught using traditional methods by teachers who have studied extensively in Japan. There aren't many opportunities like this in Los Angeles, or outside of Japan in general.</p><cite>Nathan O. · Yelp</cite></blockquote>
+      <blockquote class="q reveal d2"><div class="mark" aria-hidden="true">“</div><p>Kodokai offers something rare in today's world: a genuine koryu training environment where samurai tradition is preserved. If you're seeking an authentic koryu, taught with integrity, humility, and depth, this is where you'll find it.</p><cite>Vito L. · Yelp</cite></blockquote>
+    </div>
+    <div class="more reveal"><span class="stars" aria-label="Five stars">★★★★★</span><span>5.0 on Yelp, eight reviews, all five stars.</span><a class="link" href="https://www.yelp.com/biz/daito-ryu-aikijujutsu-kodokai-los-angeles" target="_blank" rel="noopener">Read them all</a></div>
+  </div>
+</section>
+
+<!-- ================= BEGIN ================= -->
+<section class="section begin" id="begin">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="reveal">
+          <p class="eyebrow">Beginning <span class="jp">入門</span></p>
+          <h2 class="title">How to begin</h2>
+          <p class="lede">The dojo does not run introductory offers or sign-up drives. It accepts students the way it always has: you come, you watch, you meet the teacher, and if it is right for both of you, you begin.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><div><h3>Write to the dojo</h3><p>A short email is enough: who you are, whether you have trained before, and when you could visit.</p></div></li>
+          <li class="reveal d1"><div><h3>Observe a class</h3><p>Watch a full Friday or Saturday session. You will see exactly what the training is, and what it asks of you.</p></div></li>
+          <li class="reveal d2"><div><h3>Meet the teacher</h3><p>A conversation after class. Ask anything. The teacher will explain the dojo's expectations, dues and the way in.</p></div></li>
+          <li class="reveal d3"><div><h3>Begin</h3><p>Bow in. The first years are spent on the foundation, and there is no hurry. Rank follows understanding.</p></div></li>
+        </ol>
+        <div class="faq reveal">
+          <details><summary>Do I need experience?</summary><div class="a">No. Beginners start with the foundation like everyone else. Experience in another art can help with falling and etiquette, but it is not required.</div></details>
+          <details><summary>Is there sparring or competition?</summary><div class="a">No. Daito-ryu is a koryu, a classical school. Techniques are practiced as kata with a partner, with increasing intensity as skill grows, and there are no tournaments.</div></details>
+          <details><summary>How long does it take to earn a black belt?</summary><div class="a">There is no schedule and no promise. Rank in the Kodokai reflects understanding and time on the mat and is awarded within the organization's traditional grading system. Students who ask this question first are usually asking the wrong question.</div></details>
+          <details><summary>What does it cost?</summary><div class="a">Dues are modest and are discussed in person when you visit. There are no packages to buy.</div></details>
+          <details><summary>Is the art related to aikido?</summary><div class="a">Yes. Morihei Ueshiba, the founder of aikido, was a student of Takeda Sokaku, and aikido grew from Daito-ryu. Daito-ryu remains a jujutsu system: it keeps the locks, pins and aiki that aikido reshaped.</div></details>
+          <details><summary>Where do I park?</summary><div class="a">The Hollywood Japanese Cultural Institute has a private lot on site, and the building is wheelchair accessible.</div></details>
+        </div>
+      </div>
+      <div>
+        <div class="contact reveal d1">
+          <h3>Arrange a visit</h3>
+          <p>Email is the only door. Say a little about yourself and when you could come to watch a class.</p>
+          <a class="email" href="mailto:kodoaiki@att.net?subject=Visiting%20the%20Hollywood%20Kodokai%20dojo">kodoaiki@att.net</a>
+          <p><b style="color:#f4efe5;font-weight:500">Hollywood dojo</b><br>Fridays 6:30 – 8:30 PM<br>3929 Middlebury Street, Los Angeles, CA 90004</p>
+          <p><b style="color:#f4efe5;font-weight:500">Culver City study group</b><br>Saturdays 11:30 AM – 1:30 PM<br>Address shared on request</p>
+          <div class="row"><a class="btn" href="mailto:kodoaiki@att.net?subject=Visiting%20the%20Hollywood%20Kodokai%20dojo&body=Hello%20Roy%20Sensei%2C%0A%0AI%20would%20like%20to%20arrange%20a%20time%20to%20observe%20a%20class.%0A%0AName%3A%0AAny%20prior%20training%3A%0A%0AThank%20you.">Email the dojo</a></div>
+          <div class="social">
+            <a href="https://www.facebook.com/desgroy/" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.yelp.com/biz/daito-ryu-aikijujutsu-kodokai-los-angeles" target="_blank" rel="noopener">Yelp</a>
+            <a href="https://www.uskodokai.org/" target="_blank" rel="noopener">Hombu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <svg class="mon" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="currentColor" stroke-width=".9" opacity=".8"/>
+        <text x="50" y="52" text-anchor="middle" dominant-baseline="middle" font-size="42" fill="currentColor" style="font-family:var(--jp)">幸</text>
+      </svg>
+      <div>
+        <div class="name">Daito-ryu Aikijujutsu Kodokai · Hollywood Branch<span class="jp">大東流合気柔術幸道会 ハリウッド支部</span></div>
+        <p class="lin">A branch dojo of the Daito-ryu Aikijujutsu Kodokai North American Hombu, San Luis Obispo, California, under Kiyama Hayawo Shihan, in the line of Horikawa Kodo and Takeda Sokaku. Instructor: Destrie Roy, Jun Dairi Kyoju, Yondan.</p>
+      </div>
+      <ul>
+        <li><a href="#art">The Art</a></li>
+        <li><a href="#lineage">Lineage</a></li>
+        <li><a href="#dojo">The Dojo</a></li>
+        <li><a href="#training">Training</a></li>
+        <li><a href="#visit">Schedule</a></li>
+        <li><a href="#begin">Begin</a></li>
+        <li><a href="https://www.uskodokai.org/" target="_blank" rel="noopener">uskodokai.org</a></li>
+      </ul>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year">2026</span> Daito-ryu Aikijujutsu Kodokai, Hollywood Branch. All rights reserved.</span>
+      <span>3929 Middlebury St, Los Angeles, CA 90004 · <a class="link" href="mailto:kodoaiki@att.net">kodoaiki@att.net</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),burger=document.getElementById('burger');
+  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>30)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');burger.setAttribute('aria-expanded',open?'true':'false');
+    document.body.style.overflow=open?'hidden':'';
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){
+    nav.classList.remove('open');burger.setAttribute('aria-expanded','false');document.body.style.overflow='';
+  })});
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')})}
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
